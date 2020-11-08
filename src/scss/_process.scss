@@ -1,0 +1,79 @@
+.process {
+	background-color: $grey-light;
+	padding-top: 3rem;
+
+	@media (min-width: 800px) {
+		padding-top: 5rem;
+	}
+
+	&__quote {
+		font-size: 1.25rem;
+		text-align: center;
+  	margin-bottom: 3rem;
+  	padding: 0 5%;
+
+  	@media (min-width: 800px) {
+			font-size: 1.75rem;
+			margin-bottom: 5rem;
+		}
+	}
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		color: $white;
+		background-color: $grey-dark;
+		padding: 2rem 15% 3rem 15%;
+
+		@media (min-width: 1000px) {
+			padding: 6rem 15% 3rem 15%;
+		}
+	}
+
+	&__item {
+		width: 100%;
+		text-align: center;
+		position: relative;
+
+		@media (min-width: 800px) {
+			width: 45%;
+			font-size: 1.25rem;
+		}
+
+		@media (min-width: 1200px) {
+			width: 20%;
+		}
+	}
+
+	&__circle {
+		display: none;
+		width: 8rem;
+	  height: 8rem;
+	  background-color: $grey-light;
+	  border-radius: 100%;
+	  position: absolute;
+	  top: -10rem;
+	  left: 25%;
+
+	  @media (min-width: 1200px) {
+			display: block;
+		}
+	}
+
+	&__title {
+		color: $green;
+		font-size: 1.25rem;
+		font-weight: 800;
+		margin-top: 1.5rem;
+		margin-bottom: 1rem;
+
+		@media (min-width: 800px) {
+			font-size: 1.75rem;
+		}
+
+		@media (min-width: 1200px) {
+			margin-bottom: 1.5rem;
+		}
+	}
+}

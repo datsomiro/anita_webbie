@@ -1,0 +1,78 @@
+.skills {
+	padding: 2rem 5% 4rem 5%;
+
+	@media (min-width: 800px) {
+		padding: 4rem 15% 8rem 15%;
+	}
+
+	.heading {
+		color: $green;
+	}
+
+	&__item {
+		display: flex;
+		width: 100%;
+		font-size: 1.125rem;
+		margin-bottom: 1rem;
+
+		@media (min-width: 800px) {
+			font-size: 1.75rem;
+		}
+	}
+
+	&__label {
+		width: 25%;
+		color: $white;
+		background-color: $grey-dark;
+		text-align: center;
+		padding: 0.5rem;
+
+		@media (min-width: 800px) {
+			padding: 0.75rem;
+		}
+	}
+
+	&__progress-bar {
+		width: 75%;
+		background-color: $grey-light;
+		padding: 0.5rem;
+		text-align: right;
+		position: relative;
+
+		@media (min-width: 800px) {
+			padding: 0.75rem;
+		}
+	}
+
+	&__progress {
+		background-color: $green;
+		height: 100%;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: 0;
+	  transition: width 2s;
+
+	  &--60 {
+	  	width: 60%;
+	  }
+
+	  &--70 {
+	  	width: 70%;
+	  }
+
+	  &--80 {
+	  	width: 80%;
+	  }
+	}
+
+	&__percentage {
+		position: absolute;
+		right: 0.5rem;
+		z-index: 1;
+
+		@media (min-width: 800px) {
+			right: 0.75rem;
+		}
+	}
+}

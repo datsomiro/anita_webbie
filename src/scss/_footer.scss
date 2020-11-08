@@ -1,0 +1,69 @@
+.footer {
+	background-color: $grey-light;
+	padding: 2rem 5%;
+
+	@media (min-width: 800px) {
+		padding: 4rem 15%;
+	}
+
+	.heading {
+		display: flex;
+	  align-items: center;
+	  justify-content: space-around;
+		color: $grey-dark;
+		font-weight: 800;
+
+		@media (min-width: 800px) {
+			font-size: 3.5rem;
+		}
+	}
+
+	&__line {
+		width: 10%;
+		height: 0.5rem;
+		background-color: $green;
+		margin: 0 0.5rem;
+
+		@media (min-width: 800px) {
+			width: 25%;
+		}
+	}
+
+	.social__link {
+		margin: 0 1rem;
+
+		@media (min-width: 800px) {
+			margin: 0 2rem;
+		}
+
+		&:hover {
+			opacity: 0.5;
+		}
+
+		svg {
+			width: 2rem;
+			height: 2rem;
+
+			@media (min-width: 800px) {
+				width: 4rem;
+				height: 4rem;
+			}
+		}
+
+		path {
+			fill: $grey-text;
+			opacity: 0.25;
+		}
+	}
+
+	&__copy {
+		font-size: 1rem;
+		text-align: center;
+		margin-top: 2rem;
+
+		@media (min-width: 800px) {
+			font-size: 1.5rem;
+			margin-top: 4rem;
+		}
+	}
+}
